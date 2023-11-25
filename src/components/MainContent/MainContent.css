@@ -1,0 +1,54 @@
+#content-box {
+    background-color: rgba(255, 255, 255, 0.421);
+    width: 80%;
+    height: auto;
+    /* make the corners round */
+    border-radius: 1rem;
+}
+
+#scroll-down-icon {
+    width: auto;
+    height: 6vh;
+}
+
+#content-box-mobile {
+    display: none;
+}
+
+#content-box-desktop {
+    display: flex;
+    height: 70vh;
+}
+/* Add this to your MainContent.css */
+
+#scroll-down {
+    height: 12vh;
+}
+  
+
+@media screen and (max-width: 1004px)  { /* Adjusted the breakpoint to 1004px */
+    #content-box-desktop {
+        display: none;
+    }
+
+    #content-box {
+        background-color: rgba(255, 255, 255, 0.421);
+        width: 100%;
+        height: auto;
+        /* make the corners round */
+        border-radius: 1rem;
+    }
+    
+
+    #content-box-mobile {
+        height: 70%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+  
+    /* Style the toggle button */
+    .fa-bars {
+      font-size: 24px;
+    }
+  }

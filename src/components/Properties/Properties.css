@@ -1,0 +1,46 @@
+#properties-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff 50%, #1a1a1a 50%);
+    gap: 2rem;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner-icon {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Properties.css */
+#properties-section .overflow-x-scroll {
+    /* Adjust the width to occupy less than the full screen, e.g., 80% */
+    width: 90%;
+    margin: 0 auto; /* Center the scroller */
+  
+    /* Add the scroll snap */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  
+    /* Add gradient mask for the fade effect */
+    mask-image: linear-gradient(to right, transparent, rgb(54, 54, 54) 1%, rgb(54, 54, 54) 98%, transparent);
+  }
+  
+  #properties-section .overflow-x-scroll::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for webkit browsers */
+  }
+
+  #properties-section .PropertyCardContainer {
+    scroll-snap-align: start;
+  }
+  
+
+  

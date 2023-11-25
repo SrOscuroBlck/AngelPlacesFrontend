@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#landing-page {
+    position: relative; /* Make sure the parent is positioned */
+    width: 100vw;
+    height: 100vh;
+}
+
+#landing-page::before {
+    content: ""; /* This is necessary for the pseudo-element to be generated */
+    background-image: url("assets/img/landing.png");
+    position: absolute; /* Position the pseudo-element */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place it behind the content of the parent */
+    
+    /* Darken effect */
+    background-color: #0000009e; /* Black with 30% opacity */
+    background-blend-mode: multiply; /* This will darken the image */
+}
